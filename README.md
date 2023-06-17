@@ -1,11 +1,11 @@
 # 🚪 Door Lock System 🔑
 
-This repo provides you with the material to setup your own door lock system with a Raspberry Pi Pico W communicating via MQTT Protocol over Wi-Fi.
+This repo provides you with the material to Setup your own door lock system with a Raspberry Pi Pico W communicating via MQTT Protocol over Wi-Fi.
 
 ## Prerequisites:
 - running MQTT broker (like Mosquitto, cloud hosted, ...)
 
-In my case i have an Mosquitto Docker Container up running
+In my case I have a Mosquitto Docker Container up running
 on my Raspberry Pi 4B.
 
 ## Guide
@@ -22,7 +22,7 @@ So, now we can move on ...
 </br></br>
 5. I discovered that the initial keepalive value at /lib/umqtt/simply.py with 0 doesn't work for me. I set it to 1 year (in seconds), so the connection should hold on for a year and will be then renewed by the while loop.
 </br></br>
-6. Then you only have to replace the credentials in the code at main.py with your personal and change the Pin number of the servo at servo.py if needed.
+6. Then you only have to replace the credentials in the code at main.py with your personal and change the Pin of the servo at servo.py if needed.
 
 Now you have finished the setup, well done 💪
 
